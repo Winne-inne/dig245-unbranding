@@ -1,5 +1,12 @@
 
+/**css**/
 
+body{
+    background-color: lightgray;
+}
+.content {
+    position: relative;
+}
 
 .contain {
     border: 2px solid black;
