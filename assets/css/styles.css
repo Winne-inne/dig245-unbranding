@@ -10,6 +10,9 @@ body{
 
 .contain {
     border: 2px solid black;
-    margin: 20px;
+    margin: 50px;
     display: inline-block;
+    width: 448px;
+    height: 503px;
+    
 }
