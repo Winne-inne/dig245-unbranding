@@ -11,8 +11,23 @@ body{
 .contain {
     border: 2px solid black;
     margin: 50px;
+    right: 50%;
     display: inline-block;
     width: 448px;
     height: 503px;
     
+    
 }
+
+.contain::before {
+    content: "A love as strong as yours deserves to be symbolized by something just as strong. And what better than a De Beers Diamond? The exchange of wedding bands has long signified the commitment of matrimonial partnership. Whether decorated with hand-selected round brilliant diamonds, or designed around the motif of an infinity symbol, each meticulously crafted ring in our collection is a symbol of life-long love.";
+    font-family: bold Papyrus, fantasy;
+}
+
+.contain:hover::before{
+    content: "Lies";
+    font-family: bold Papyrus, fantasy;
+}
+
+
+
