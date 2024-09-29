@@ -2,18 +2,20 @@ let page = document.querySelector(".page");
 let page1 = document.querySelector(".page1");
 let page2 = document.querySelector(".page2");
 
-let visible = 1;
-page.addEventListener("mouseenter", swapImage);
-page.addEventListener("mouseleave", swapImage);
+let debounceTimeout;
+let count = 0; 
 
-function swapImage() {
-	if (visible == 1) {
-		visible = 2;
-		page1.style.visibility = "none";
-		page2.style.visibility = "block";
-	} else {
-		visible = 1;
-		page1.style.display = "block";
-		page2.style.display = "none";
-	}
-}
+page.addEventListener("mouseenter", function() {
+  clearTimeout(debounceTimeout);
+  debounceTimeout = setTimeout(function() {
+    count++;
+    page1.style.opacity = 0;
+    page2.style.opacity = 1;
+  }, 100); 
+});
+
+page.addEventListener("mouseleave", function() {
+  clearTimeout(debounceTimeout);
+  page1.style.opacity = 1;
+  page2.style.opacity = 0;
+});
