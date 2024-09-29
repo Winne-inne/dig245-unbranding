@@ -1,17 +1,19 @@
-/* javascript */
-let entire = document.querySelector(".entire");
+let page = document.querySelector(".page");
 let page1 = document.querySelector(".page1");
 let page2 = document.querySelector(".page2");
-let entire = 1;
 
-page1.addEventListener("mouseover",function(){
-    if (entire==1){
-        visibility=2;
-        page1.style.display="none"
-        page2.style.display="block"
-    }else{
-        visibility=1
+let visible = 1;
+page.addEventListener("mouseenter", swapImage);
+page.addEventListener("mouseleave", swapImage);
 
-    }
-    this.style.display = "none"
-})
+function swapImage() {
+	if (visible == 1) {
+		visible = 2;
+		page1.style.visibility = "none";
+		page2.style.visibility = "block";
+	} else {
+		visible = 1;
+		page1.style.display = "block";
+		page2.style.display = "none";
+	}
+}

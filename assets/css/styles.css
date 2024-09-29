@@ -1,38 +1,28 @@
-.entire{
-    background-color: rgba(181, 237, 177, 1);
+.entire {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
-    transition: visibility 0s,opacity 0s ease-in;
 }
-
-.container{
-    width: 100%;
+.navbar{
+    width: fit-content;
+}
+.page{
     margin: 50px auto;
-    position: relative;
 }
 .page1{
     columns: 50px 2;
-    margin: 50px 50px 50px 50px;
-    position: relative;
-    z-index: 1;
+    margin: 0px 50px 0px 50px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    background-color: rgba(181, 237, 177, 1);
 }
 .page2{
+    background-color: black;
+    padding: 10px 10px 10px 10px;
     columns: 50px 2;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s,opacity 0s ease-in;
-}
-.page1:hover ~ .page2{
-    visibility: visible;
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 1);
+    z-index: -1;
+    margin: 0px 50px 0px 50px;
 }
 .head1{
     text-align: center;
