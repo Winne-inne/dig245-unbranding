@@ -1,33 +1,48 @@
-
-/**css**/
-
-body{
-    background-color: lightgray;
+.entire {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
 }
-.content {
-    position: relative;
+.navbar{
+    width: fit-content;
 }
-
-.contain {
-    border: 2px solid black;
-    margin: 50px;
-    right: 50%;
-    display: inline-block;
-    width: 448px;
-    height: 503px;
-    
-    
+.page{
+    margin: 50px auto;
 }
-
-.contain::before {
-    content: "A love as strong as yours deserves to be symbolized by something just as strong. And what better than a De Beers Diamond? The exchange of wedding bands has long signified the commitment of matrimonial partnership. Whether decorated with hand-selected round brilliant diamonds, or designed around the motif of an infinity symbol, each meticulously crafted ring in our collection is a symbol of life-long love.";
-    font-family: bold Papyrus, fantasy;
+.page1{
+    columns: 50px 2;
+    margin: 0px 50px 0px 50px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    background-color: rgba(181, 237, 177, 1);
 }
-
-.contain:hover::before{
-    content: "Lies";
-    font-family: bold Papyrus, fantasy;
+.page2{
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    columns: 50px 2;
+    position: absolute;
+    z-index: -1;
+    margin: 0px 50px 0px 50px;
 }
+.head1{
+    text-align: center;
+    font-style: italic;
+    margin: 50px 50px;
+    padding: auto;
 
-
-
+}
+.head2{
+    text-align: center;
+    font-style: italic;
+    margin: 50px 50px;
+    padding: auto;
+}
+.text2{
+    padding: 25px;
+}
+.page2 .content{
+    color: white;
+}
+.col{
+    margin: auto;
+}
